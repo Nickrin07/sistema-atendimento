@@ -19,8 +19,12 @@ function incluir(){
 }
 
 function listar(){
+    ulLista.innerHTML=''
     for (let nome of listaDeAtendimento){
-        console.log(nome)
+     let li = document.createElement('li')
+     li.classList.add('lista-group-item')
+     li.textContent = nome
+     ulLista.appendChild(li)
     }
 }
 //eventos
